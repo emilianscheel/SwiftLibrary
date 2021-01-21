@@ -22,3 +22,13 @@ Create `buttonTapped()` function.
   print("Hello World!")
 }
 ```
+
+## Hide keyboard by tapping anywhere on the screen
+
+Add this into your `ViewController` class.
+```Swift
+override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+  view.endEditing(true)
+}
+```
+
